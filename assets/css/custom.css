@@ -1,10 +1,17 @@
 
 nav.navbar.bootsnav.logo-move .navbar-brand {
-	display: block;
+	display: inline-block;
 }
 
 nav.navbar.bootsnav.logo-move.no-background .navbar-brand {
 	display: none;
+}
+
+nav.navbar.bootsnav.logo-move .attr-nav .dropdown-lang button{
+  color: var(--color-heading);
+}
+nav.navbar.bootsnav.logo-move.no-background .attr-nav .dropdown-lang button {
+	color: var(--white);
 }
 
 nav.navbar.bootsnav.logo-move.no-background .nav-spacing,
@@ -44,6 +51,9 @@ nav.navbar.navbar-default.logo-move .navbar-collapse {
     
 }
 @media (max-width: 767px) {
+  nav.navbar.bootsnav.navbar-fixed.nav-box.no-background .attr-nav .dropdown-lang button{
+    color: var(--color-heading);
+  }
     nav.navbar.bootsnav.logo-move.no-background .nav-spacing{
         display: none !important;
     }
@@ -54,13 +64,13 @@ nav.navbar.navbar-default.logo-move .navbar-collapse {
     nav.navbar.bootsnav.logo-move.no-background .navbar-brand{
         display: inline-block !important;
     }
-    .navbar .col-lg-1:last-child {
+    .navbar .col-lg-3:last-child {
 		position: absolute;
 		top: 15px;
 		right: 30px;
 		width: auto;
 	}
-	.nav-box .col-lg-1:last-child {
+	.nav-box .col-lg-3:last-child {
 		position: absolute;
 		right: 0;
 		top: 0;
