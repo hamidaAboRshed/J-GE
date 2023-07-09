@@ -401,37 +401,25 @@
                                     <a class="btn btn-theme secondary effect btn-md" href="contact.html">Free Estimate</a>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="thumb">
-                                        <img src="assets/img/s10.jpg" alt="Thumb">
-                                        <h4><strong><span>29%</span> Off</strong> For the new customers</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Item -->
-                        <!-- Single Item -->
-                        <div class="item">
-                            <div class="row align-center">
-                                <div class="col-lg-6 content">
-                                    <h5>One Time / Recurring</h5>
-                                    <h2>
-                                        You can count on our company to meet your flooring needs</h2>
-                                    <p>
-                                        Whether you have a new construction project or refurbishment of your own facility, we serve many venues, including:
-                                    </p>
-                                    <ul>
-                                        <li>Residential apartments</li>
-                                        <li>commercial offices</li>
-                                        <li>villas</li>
-                                        <li>commercial centers</li>
-                                        <li>restaurants</li>
-                                        <li>hotels</li>
-                                    </ul>
-                                    <a class="btn btn-theme secondary effect btn-md" href="contact.html">Free Estimate</a>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="thumb">
+                                    <div class="thumb" id="slideshow">
                                         <img src="assets/img/s11.jpg" alt="Thumb">
+                                        <img src="assets/img/s12.jpg" alt="Thumb">
+                                        <img src="assets/img/s10.jpg" alt="Thumb">
+                                        <script>
+                                            var images = document.querySelectorAll('#slideshow img');
+                                            var currentIndex = 0;
+                                            function showImage() {
+                                            for (var i = 0; i < images.length; i++) {
+                                            images[i].style.display = "none";
+                                            }
+                                            images[currentIndex].style.display = "block";
+                                            currentIndex++;
+                                            if (currentIndex >= images.length) {
+                                            currentIndex = 0;
+                                            }
+                                        }
+                                    setInterval(showImage, 3000); 
+                                        </script>
                                         <h4><strong><span>38%</span> Off</strong> For the new customers</h4>
                                     </div>
                                 </div>
