@@ -31,6 +31,10 @@ nav.navbar.navbar-default.logo-move .navbar-collapse {
 nav.navbar.navbar-default.logo-move .navbar-collapse {
 	margin-left: -15px;
 }
+.about-us-area .about-items .shape img{
+	height: 120px;
+    transform: rotate(79deg);
+}
 
 @media (min-width: 1024px) {
     nav.navbar.bootsnav.small-pad.logo-move ul.nav>li>a {
