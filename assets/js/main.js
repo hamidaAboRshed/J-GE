@@ -403,5 +403,10 @@
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");;
     });
+    // $(window).load(function() {
+    //     $(".se-pre-con").fadeOut("slow");;
+    // });
+    
+    // $(".se-pre-con").fadeOut("slow");;
 
 })(jQuery); // End jQuery
