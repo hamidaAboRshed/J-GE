@@ -81,20 +81,51 @@ Sidebar heading:  20px 'Yantramanav', sans-serif
 	--font-default: 'Yantramanav', sans-serif;
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000;
-	--dark: #06278a;
-	--dark-secondary: #06278a;
+	/* --dark: #06278a; */
+	/* --dark: #505565; */
+	--dark: #535a6c;
+	--dark-secondary: #505565;
 	--white: #ffffff; 
-	--color-primary: #1239ac; 
-	--color-secondary: #ffb400; 
-	--color-heading: #1d2746;
+	/* --color-primary: #1239ac;  */
+	--color-primary: #697085; 
+	/* --color-primary: #505565;  */
+	/* --color-secondary: #ffb400;  */
+	/* --color-secondary: #850969; */
+	/* --color-secondary: #6c2400; */
+	/* --color-secondary: #00666c; */
+	--color-secondary: #623c3b;
+	--color-secondary: #4d1299;
+	--color-secondary: #d69865;
+	--color-secondary: #e1cbb1;
+	--color-secondary: #ce9465;
+	--color-secondary: #dfb28c;
+	--color-secondary: #b47b4c;
+
+	--color-secondary: #a86e58;
+	--color-secondary: #b68e56;
+	--color-secondary: #a67c42;
+
+	/* --color-secondary: #a0ddff;
+	--color-secondary: #e2f0ff; */
+	/* --color-secondary: #d8a31a; */
+
+
+	--color-secondary: #9dabcf;
+	--color-highlight:#ffb400;
+	/* #06278a;  */
+	/* --color-heading: #1d2746; */
+	/* --color-heading: #656c81; */
+	--color-heading: #21004c;
 	--color-paragraph: #666666;
 	--border-default: #e7e7e7;
 	--box-shadow-primary: 0 0 25px rgb(0 0 0 / 8%);
-	--box-shadow-secondary: 0 10px 30px 0 rgb(44 130 237 / 40%);
+	/* --box-shadow-secondary: 0 10px 30px 0 rgb(44 130 237 / 40%); */
+	--box-shadow-secondary: 0 10px 30px 0 #9dabcfc4;
 	--box-shadow-tertiary: 0px 2px 12px 0px #e7e7e7;
 	--box-shadow-dark: 0px 0px 0px;
 	--bg-gray: #eef0f6;
 	--bg-gradient: linear-gradient(to right, #1239ac, #00f3dd, #1239ac);
+	--bg-gradient-opacity: linear-gradient(90deg, rgba(79, 84, 100, 0.846376) 20%, rgba(0, 0, 0, 0) 100%);
 }
 
 /*
@@ -543,7 +574,7 @@ input {
 }
 
 .shadow.gradient::after {
-	background: linear-gradient(90deg, rgba(6, 39, 138, 0.846376) 20%, rgba(0, 0, 0, 0) 100%);
+	background: var(--bg-gradient-opacity);
 	content: "";
 	height: 100%;
 	left: 0;
